@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": [
+      "ES2022",
+      "DOM",
+      "DOM.Iterable"
+    ],
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "paths": {
+      "mesh-avatar": ["./packages/runtime/src/index.ts"],
+      "mesh-avatar-element": ["./packages/element/src/index.ts"]
+    },
+    "jsx": "react-jsx",
+    "strict": true,
+    "allowJs": true,
+    "allowImportingTsExtensions": true,
+    "checkJs": false,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "noEmit": true
+  },
+  "include": [
+    "src",
+    "packages/runtime/src",
+    "packages/runtime/tests",
+    "packages/element/src",
+    "packages/element/tests",
+    "tests",
+    "e2e",
+    "vite.config.ts",
+    "playwright.config.ts",
+    "packages/react/src",
+    "packages/react/tests"
+  ]
+}
